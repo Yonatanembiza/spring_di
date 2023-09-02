@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- this is XSD -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id = "student1" class = "com.spring_dependncyinjection.di.spring_di.Student">
+    <property name = "studentName" value = "Yonatan Embiza" />
+    <property name = "studentID" value = "05"/>
+</bean>
+
+<bean id = "student2" class = "com.spring_dependncyinjection.di.spring_di.Student">
+    <property name = "studentName" value = "Daniel Semunugus" />
+    <property name = "studentID" value = "055"/>
+</bean>
+
+
+</beans>
