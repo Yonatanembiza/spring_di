@@ -17,10 +17,12 @@ public class Exam {
 		 */
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-		Student student1 = context.getBean("student1", Student.class);
-		Student student2 = context.getBean("student2", Student.class);
+		// Student student1 = context.getBean("student1", Student.class);
+		// Student student2 = context.getBean("student2", Student.class);
+		Student student = context.getBean("student", Student.class);
 
-		student1.displayStudentInfo();
-		student2.displayStudentInfo();
+		// student1.displayStudentInfo();
+		// student2.displayStudentInfo();
+		student.displayStudentInfo();
 	}
 }
